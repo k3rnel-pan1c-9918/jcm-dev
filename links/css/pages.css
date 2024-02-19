@@ -1,0 +1,153 @@
+@media (prefers-color-scheme: dark) {
+
+    /* defaults to dark theme */
+    body {
+        width: 70%;
+        margin: auto;
+        --text-color: #eee;
+        --bkg-color: #2b2a2a;
+        --card-bkg-color: rgba(64, 64, 64, 0.05);
+        --landing-card-box-shadow: rgba(255, 255, 255, 0.25);
+    }
+
+    body.light-theme {
+        width: 70%;
+        margin: auto;
+        --text-color: #222;
+        --bkg-color: lightgray;
+        --card-bkg-color: rgba(64, 64, 64, 0.05);
+        --landing-card-box-shadow: rgba(0, 0, 0, 0.25);
+    }
+}
+
+@media (max-width: 1500px) {
+
+    body,
+    body.light-theme {
+        width: 95%;
+        margin: auto;
+    }
+}
+
+/* default settings */
+body {
+    background: var(--bkg-color);
+}
+
+h1,
+h2,
+h3,
+h5,
+h6,
+small,
+td,
+tr,
+li,
+p {
+    color: var(--text-color);
+}
+
+.btn {
+    background-color: transparent;
+}
+
+/* - - - - - - - - - - | navbar - flags */
+#flag {
+    margin: 0.25em;
+    width: 25px;
+    height: auto;
+    vertical-align: middle;
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+/* - - - - - - - - - - | navbar - toggle button | */
+
+#btn_dark_mode {
+    margin: 0.25em;
+    width: 25px;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+    border: solid 1px darkgray;
+    filter: invert(.5);
+}
+
+/* - - - - - - - - - - | index page - profile picture */
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px blue solid;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 var(--landing-card-box-shadow), 0 6px 20px 0 var(--landing-card-box-shadow);
+}
+
+/* - - - - - - - - - - | index page - logos */
+#logos {
+    width: auto;
+    height: 40px;
+    object-fit: cover;
+    margin: .5em;
+}
+
+#logos_projects {
+    width: auto;
+    height: 25px;
+    object-fit: cover;
+    margin: .3em;
+}
+
+/* - - - - - - - - - - | cards  */
+.card {
+    border: solid 1px gray;
+    background-color: var(--card-bkg-color);
+}
+
+.card-footer {
+    text-align: right;
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+/* - - - - - - - - - - | alerts */
+.alert {
+    background-color: gray;
+}
+
+.sitemap_alert {
+    background-color: rgba(124, 124, 124, 0.5);
+
+}
+
+/* - - - - - - - - - - | modal */
+
+.modal-content{
+    background-color: transparent;
+    border: 0px transparent;
+}
+.modal-header{
+    background-color: var(--bkg-color);
+    border: solid 1px gray;
+    border-radius: 10px;
+}
+.modal-body{
+    background-color: var(--bkg-color);
+    border: solid 1px gray;
+    border-radius: 10px;
+}
+
+/* - - - - - - - - - - | jumbotron  */
+.jumbotron {
+    background-color: var(--card-bkg-color);
+    border: solid 1px gray;
+    border-radius: 10px;
+}
+
+
+/* - - - - - - - - - - | projects - img */
+.project_img {
+    width: 100%;
+    border-radius: 10px;
+    border: gray solid 2px;
+}
